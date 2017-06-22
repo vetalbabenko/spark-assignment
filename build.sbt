@@ -4,9 +4,12 @@ version := "1.0"
 
 scalaVersion := "2.11.8"
 
+resolvers += Resolver.sonatypeRepo("releases")
+
+
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "2.1.0",
   "org.apache.spark" %% "spark-sql" % "2.1.0",
-  "org.json4s" %% "json4s-jackson_2.10" % "3.1.0",
-  "org.scalatest" % "scalatest_2.12" % "3.0.0" % "test"
+  "org.scalactic" %% "scalactic" % "3.0.1",
+  "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 )
